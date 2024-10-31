@@ -1,0 +1,31 @@
+###Register
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "nip": "1234567890",
+  "nama": "John Doe",
+  "email": "johndoe@example.com",
+  "password": "securepassword",
+  "role": "dosen"
+}
+
+###Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "johndoe@example.com",
+  "password": "securepassword"
+}
+
+###
+# User Logout### User Logout
+POST http://localhost:5000/api/auth/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZSI6ImRvc2VuIiwiaWF0IjoxNzMwNDExMzMxLCJleHAiOjE3MzA0MTIyMzF9.eoI5G2DT-ksJizD1I0BzAQ_BwDW9GWSg3IcoyoRTqX0
+
+
+
+### Mark Attendance
+POST http://localhost:5000/api/attendance
+Authorization: Bearer 
